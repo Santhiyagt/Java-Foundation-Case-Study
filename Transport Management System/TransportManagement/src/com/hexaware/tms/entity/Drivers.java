@@ -1,40 +1,71 @@
 package com.hexaware.tms.entity;
-
+/*
+ * @Authors: Priya, Santhiya
+ * Date: 12-Apr-2025
+ * desc: creating entity class for Drivers
+ */
 
 public class Drivers {
-    private int driverId;
-    private String firstName;
-    private String lastName;
-    private String licenseNumber;
-    private String status;
+	private int driverId;
+	private String firstName;
+	private String lastName;
+	private String licenseNumber;
+	private String status;
 
-    public Drivers() {}
+	public Drivers() {
+	}
 
-    public Drivers(int driverId, String firstName, String lastName, String licenseNumber, String status) {
-        this.driverId = driverId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.licenseNumber = licenseNumber;
-        this.status = status;
-    }
+	public Drivers(int driverId, String firstName, String lastName, String licenseNumber, String status) {
+		this.driverId = driverId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.licenseNumber = licenseNumber;
+		this.status = status;
+	}
 
-    public int getDriverId() { return driverId; }
-    public void setDriverId(int driverId) { this.driverId = driverId; }
+	public int getDriverId() {
+		return driverId;
+	}
 
-    public String getFirstName() { return firstName; }
-    public void setFirstName(String firstName) { this.firstName = firstName; }
+	public void setDriverId(int driverId) {
+		this.driverId = driverId;
+	}
 
-    public String getLastName() { return lastName; }
-    public void setLastName(String lastName) { this.lastName = lastName; }
+	public String getFirstName() {
+		return firstName;
+	}
 
-    public String getLicenseNumber() { return licenseNumber; }
-    public void setLicenseNumber(String licenseNumber) { this.licenseNumber = licenseNumber; }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+	public String getLastName() {
+		return lastName;
+	}
 
-    @Override
-    public String toString() {
-        return "Driver [ID=" + driverId + ", Name=" + firstName + " " + lastName + ", License=" + licenseNumber + ", Status=" + status + "]";
-    }
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getLicenseNumber() {
+		return licenseNumber;
+	}
+
+	public void setLicenseNumber(String licenseNumber) {
+		this.licenseNumber = licenseNumber;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	@Override
+	public String toString() {
+		return "Driver [ID=" + driverId + ", Name=" + firstName + " " + lastName + ", License=" + licenseNumber
+				+ ", Status=" + status + "]";
+	}
 }

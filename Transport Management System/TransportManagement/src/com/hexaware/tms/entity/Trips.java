@@ -1,60 +1,105 @@
 package com.hexaware.tms.entity;
 
 import java.time.LocalDateTime;
+/*
+ * @Authors: Priya, Santhiya
+ * Date: 13-Apr-2025
+ * desc: creating entity class for Trips
+ */
 
 public class Trips {
-    private int tripId;
-    private int vehicleId;
-    private int routeId;
-    private LocalDateTime departureDate;
-    private LocalDateTime arrivalDate;
-    private String status;
-    private String tripType;
-    private int maxPassengers;
+	private int tripId;
+	private int vehicleId;
+	private int routeId;
+	private LocalDateTime departureDate;
+	private LocalDateTime arrivalDate;
+	private String status;
+	private String tripType;
+	private int maxPassengers;
 
-    public Trips() {}
+	public Trips() {
+	}
 
-    public Trips(int tripId, int vehicleId, int routeId, LocalDateTime departureDate,
-                LocalDateTime arrivalDate, String status, String tripType, int maxPassengers) {
-        this.tripId = tripId;
-        this.vehicleId = vehicleId;
-        this.routeId = routeId;
-        this.departureDate = departureDate;
-        this.arrivalDate = arrivalDate;
-        this.status = status;
-        this.tripType = tripType;
-        this.maxPassengers = maxPassengers;
-    }
+	public Trips(int tripId, int vehicleId, int routeId, LocalDateTime departureDate, LocalDateTime arrivalDate,
+			String status, String tripType, int maxPassengers) {
+		this.tripId = tripId;
+		this.vehicleId = vehicleId;
+		this.routeId = routeId;
+		this.departureDate = departureDate;
+		this.arrivalDate = arrivalDate;
+		this.status = status;
+		this.tripType = tripType;
+		this.maxPassengers = maxPassengers;
+	}
 
-    public int getTripId() { return tripId; }
-    public void setTripId(int tripId) { this.tripId = tripId; }
+	public int getTripId() {
+		return tripId;
+	}
 
-    public int getVehicleId() { return vehicleId; }
-    public void setVehicleId(int vehicleId) { this.vehicleId = vehicleId; }
+	public void setTripId(int tripId) {
+		this.tripId = tripId;
+	}
 
-    public int getRouteId() { return routeId; }
-    public void setRouteId(int routeId) { this.routeId = routeId; }
+	public int getVehicleId() {
+		return vehicleId;
+	}
 
-    public LocalDateTime getDepartureDate() { return departureDate; }
-    public void setDepartureDate(LocalDateTime departureDate) { this.departureDate = departureDate; }
+	public void setVehicleId(int vehicleId) {
+		this.vehicleId = vehicleId;
+	}
 
-    public LocalDateTime getArrivalDate() { return arrivalDate; }
-    public void setArrivalDate(LocalDateTime arrivalDate) { this.arrivalDate = arrivalDate; }
+	public int getRouteId() {
+		return routeId;
+	}
 
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+	public void setRouteId(int routeId) {
+		this.routeId = routeId;
+	}
 
-    public String getTripType() { return tripType; }
-    public void setTripType(String tripType) { this.tripType = tripType; }
+	public LocalDateTime getDepartureDate() {
+		return departureDate;
+	}
 
-    public int getMaxPassengers() { return maxPassengers; }
-    public void setMaxPassengers(int maxPassengers) { this.maxPassengers = maxPassengers; }
+	public void setDepartureDate(LocalDateTime departureDate) {
+		this.departureDate = departureDate;
+	}
 
-    @Override
-    public String toString() {
-        return "Trip [ID=" + tripId + ", VehicleID=" + vehicleId + ", RouteID=" + routeId +
-               ", Departure=" + departureDate + ", Arrival=" + arrivalDate +
-               ", Status=" + status + ", Type=" + tripType + ", MaxPassengers=" + maxPassengers + "]";
-    }
+	public LocalDateTime getArrivalDate() {
+		return arrivalDate;
+	}
+
+	public void setArrivalDate(LocalDateTime arrivalDate) {
+		this.arrivalDate = arrivalDate;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getTripType() {
+		return tripType;
+	}
+
+	public void setTripType(String tripType) {
+		this.tripType = tripType;
+	}
+
+	public int getMaxPassengers() {
+		return maxPassengers;
+	}
+
+	public void setMaxPassengers(int maxPassengers) {
+		this.maxPassengers = maxPassengers;
+	}
+
+	@Override
+	public String toString() {
+		return "Trip [ID=" + tripId + ", VehicleID=" + vehicleId + ", RouteID=" + routeId + ", Departure="
+				+ departureDate + ", Arrival=" + arrivalDate + ", Status=" + status + ", Type=" + tripType
+				+ ", MaxPassengers=" + maxPassengers + "]";
+	}
 }
-
